@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    .main_container{
+        display: inline-block;
+    }
+</style>
+<body>
+   <div class="main_container">
+    <div style="margin-bottom: 40px;" class="container">
+        <h1>Sign Up</h1>
+        <form action="/action_page.php" method="get" id="signupForm">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button id="signupbtn" type="submit">Sign Up</button>
+        </form>
+    </div>
+
+
+    <div class="container">
+        <h1>Login</h1>
+        <form action="/action_page.php" method="get" id="LoginForm">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="Login_email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="login_password" name="password" required>
+            </div>
+            <button id="Login_btn" type="submit">Login</button>
+        </form>
+    </div>
+</div>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
